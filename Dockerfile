@@ -24,6 +24,9 @@ RUN touch /Users/nelle/.bash_history && \
   touch /Users/nelle/.nano_history && \
   chown nelle:nelle /Users/nelle/.bash_history /Users/nelle/.nano_history
 
+# Don't print entire path at each prompt
+RUN echo 'export PS1="\u@\h:\W\$ "' >> /etc/bash.bashrc
+
 USER nelle
 
 WORKDIR /Users/nelle/
