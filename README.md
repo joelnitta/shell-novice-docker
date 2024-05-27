@@ -24,3 +24,4 @@ docker run --rm -it -v ${HOME}/Desktop:/Users/nelle/Desktop joelnitta/shell-novi
 
 ## License
 
+[MIT](LICENSE)
